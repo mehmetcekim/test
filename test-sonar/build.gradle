@@ -7,7 +7,7 @@
  */
 
 // Apply the java-library plugin to add support for Java Library
-apply plugin: 'java-library'
+apply plugin: 'java-library' 
 
 // In this section you declare where to find the dependencies of your project
 repositories {
@@ -35,6 +35,5 @@ sonarqube {
     properties {
         property "sonar.projectName", "Java :: Simple Project :: SonarQube Scanner for Gradle"
         property "sonar.projectKey", "org.sonarqube:java-gradle-simple"
-        property "sonar.jacoco.reportPath", "${project.buildDir}/jacoco/test.exec"
     }
 }
